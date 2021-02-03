@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% block content %}
+	<p>Необычные сладости со всего мира!</p>
+	<p class="card.name">{{ title }}</p>
+		{{ prices }}
+	{% for el in prices %}
+
+		<div class="card">
+			<img src="{{ el.prices }}.png">
+			<p class="card.name">{{ el.prices }}</p>
+			<p class='price'>{{ el.price }}</p>
+		</div>
+	{% endfor %}
+
+{% endblock %}
