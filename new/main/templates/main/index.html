@@ -4,12 +4,16 @@
 	<p class="card.name">{{ title }}</p>
 		{{ prices }}
 	{% for el in prices %}
-
-		<div class="card">
-			<img src="{{ el.prices }}.png">
-			<p class="card.name">{{ el.prices }}</p>
-			<p class='price'>{{ el.price }}</p>
+		<div class="card-group">
+		  <div class="card" style="max-width: 18rem;">
+			<img src="{{ el.title }}.png" class="card-img-top min-width:" alt="...">
+			<div class="card-body">
+				<a class='card-link'>{{ el.title }}</a>
+				<p class="card-text">{{ el.price }} руб.</p>
+			</div>
+		  </div>
 		</div>
+
 	{% endfor %}
 
 {% endblock %}
