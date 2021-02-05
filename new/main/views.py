@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from .models import Price
+from .models import Sale
+
 
 
 def index(request):
         prices = Price.objects.all()
         sale = Sale.objects.all()
-        return render(request, 'main/index.html', {'title': 'Название', 'prices': prices, 'sale': sale})
+        return render(request, 'main/index.html', {'title': 'Название', 'prices': prices})
+        return render(request, 'main/index.html', {'title': 'Название', 'sale': sale})
 
 
 def about(request):
