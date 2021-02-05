@@ -2,11 +2,10 @@
 {% block content %}
 	<p>Необычные сладости со всего мира!</p>
 	<p class="card.name">{{ title }}</p>
-		{{ prices }}
 	{% for el in prices %}
 		<div class="card-group">
 		  <div class="card" style="max-width: 18rem;">
-			<img src="{{ el.title }}.png" class="card-img-top min-width:" alt="...">
+			<img src="{{ el.img }}" class="card-img-top min-width:" alt="...">
 			<div class="card-body">
 				<a class='card-link'>{{ el.title }}</a>
 				<p class="card-text">{{ el.price }} руб.</p>
