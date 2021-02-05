@@ -4,7 +4,8 @@ from .models import Price
 
 def index(request):
         prices = Price.objects.all()
-        return render(request, 'main/index.html', {'title': 'Название', 'prices': prices})
+        sale = Sale.objects.all()
+        return render(request, 'main/index.html', {'title': 'Название', 'prices': prices, 'sale': sale})
 
 
 def about(request):
