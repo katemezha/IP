@@ -26,7 +26,7 @@ SECRET_KEY = '^(+qdew5u-y91be3imioer=zrzs35uy&zats#+_%huzbc)$bvp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ip.std-925.ist.mospolytech.ru', '127.0.0.1']
 
 
 # Application definition
